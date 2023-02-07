@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alura Encriptador</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Mis estilos -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="./assets/img/logo.png" alt="" />
+        </header>
+
+        <!-- Cuerpo -->
+        <main>
+            <!-- Seccion 1 -->
+            <section class="contenedores grid-item-1">
+                <!-- Texto de Entrada -->
+                <textarea
+                    name="textoEntrada"
+                    id="textoEntrada"
+                    placeholder="Escribe tu texto aquí"
+                ></textarea>
+
+                <div class="advertencia">
+                    <img src="./assets/img/exclamation.png" alt="Exclamation"/>
+                    Solo letras minúsculas y sin acentos
+                </div>
+
+                <!-- Contenedor de botones -->
+                <div class="cajaBotones">
+                    <!-- Encriptar -->
+                    <button id="btnEncriptar" class="botones">Encriptar</button>
+                    <!-- Desencriptar -->
+                    <button id="btnDesencriptar" class="botones">Desencriptar</button>
+                </div>
+            </section>
+
+            <!-- Seccion 2 -->
+            <section class="contenedores grid-item-2">
+              <!-- Imagen muñeco -->
+                <img src="./assets/img/muneco.png" width="200" alt="" id="muneco" />
+              <!-- Titilo sección 2 -->
+                <h1 id="titulo">Ningún mensaje fue encontrado</h1>
+              <!-- Párrafo -->
+                <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+              <!-- Texto Área -->
+                <textarea
+                    name="textoSalida"
+                    id="textoSalida"
+                    placeholder="Texto encriptado"
+                    class="hide"
+                    disabled
+                ></textarea>
+              <!-- Botón Copiar -->
+                <button id="btnCopiar" class="botones hide">Copiar</button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+          <!-- Copy -->
+            <h1>Copyright &copy; 2023</h1>
+            <!-- Alumno -->
+            <h1>Eliezer Lorenzo Garcia</h1>
+            <!-- redes sociales -->
+            <div class="red-social">
+                <a href="https://github.com/elorenzog" title="github">
+                    <img src="./assets/img/github.svg" alt="" />
+                </a>
+                <a href="https://www.linkedin.com/in/eliezer-lorenzo-ds/" title="likedin">
+                    <img src="./assets/img/linkedin.svg" alt="" />
+                </a>
+            </div>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
